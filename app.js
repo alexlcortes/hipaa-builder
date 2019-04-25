@@ -12,8 +12,9 @@ function drop(event) {
   event.preventDefault();
   var data = event.dataTransfer.getData("Text");
   event.target.appendChild(document.getElementById(data));
-  console.log(data);
+  console.log("Data: " + data);
   newData.push(data);
+  printnewData();
 
 //How to convert data into integer
 //console.log(parseInt(data, 10) + 20);
@@ -21,6 +22,5 @@ function drop(event) {
 }
 
 function printnewData() {
-  var pushData = newData.slice(0);
-  console.log(pushData);
+  console.log("Array newData: " + newData[0]);
 }
