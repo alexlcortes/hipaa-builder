@@ -30,8 +30,10 @@
 
         <div class="droptarget empty" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
-        <br />
-        <button type="button" value="Refresh Page" onClick="window.location.reload()">Start Over</button>
+        <hr />
+        <button type="button" value="Refresh Page" onClick="window.location.reload()">Reset</button>
+        <hr />
+        <button type="button" onClick="cal1()">Calculate</button>
 
     </div><!-- end of col 1 -->
 
@@ -39,10 +41,12 @@
       <h3>Custom Features</h3>
 
       <div class="droptarget empty" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <p ondragstart="dragStart(event)" draggable="true" id="100" style="cursor:pointer;" title="IPS">IPS</p>
+        <p ondragstart="dragStart(event)" draggable="true" id="100" style="cursor:pointer;" title="ips">IPS</p>
       </div>
 
-      <div class="droptarget empty" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="droptarget empty" ondrop="drop2(event)" ondragover="allowDrop(event)">
+        <p ondragstart="dragStart(event)" draggable="true" id="99" style="cursor:pointer;" title="man">Management</p>
+      </div>
 
     </div><!-- end of col 2 -->
 
