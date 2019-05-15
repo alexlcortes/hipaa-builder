@@ -11,9 +11,13 @@
 <div class="container">
 
   <div class="source">
-    <h3>ATLANTIC.NET HIPAA CUSTOM FEATURES</h3>
+    <h3 class="text-center">ATLANTIC.NET HIPAA CUSTOM FEATURES</h3>
     <div class="row">
-      <div class="col" id="source"><img id="firewall" src="https://www.atlantic.net/wp-content/themes/anet/img/hipaa/firewall.png" ondrag="drag_handler(event);" ondragstart="dragstart_handler(event);" draggable="true"></div>
+      <!-- input triggers modal -->
+      <div class="col" id="source">
+        <input type="image" id="firewall" src="https://www.atlantic.net/wp-content/themes/anet/img/hipaa/firewall.png" ondrag="drag_handler(event);" ondragstart="dragstart_handler(event);" draggable="true" data-toggle="modal" data-target="#exampleModal" />
+      </div>
+
       <div class="col"><img id="vpn" src="https://www.atlantic.net/wp-content/themes/anet/img/hipaa/encrypted-vpn.png" ondrag="drag_handler(event);" ondragstart="dragstart_handler(event);" draggable="true"></div>
       <div class="col"><img id="offsite" src="https://www.atlantic.net/wp-content/themes/anet/img/hipaa/encrypted-storage.png" ondrag="drag_handler(event);" ondragstart="dragstart_handler(event);" draggable="true"></div>
       <div class="col"><img id="intru" src="https://www.atlantic.net/wp-content/themes/anet/img/hipaa/intrusion.png" ondrag="drag_handler(event);" ondragstart="dragstart_handler(event);" draggable="true"></div>
@@ -27,16 +31,44 @@
   <br />
 
   <div class="target">
-    <h3>ATLANTIC.NET g2.4GBM SERVER</h3>
+    <h3 class="text-center">ATLANTIC.NET g2.4GBM SERVER</h3>
     <div class="row">
         <div id="target1" class="col" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></div>
         <div id="target2" class="col" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></div>
         <div id="target3" class="col" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></div>
         <div id="target4" class="col" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></div>
         <div id="target5" class="col" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></div>
-        <div id="target6" class="col" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></div>
+    </div>
+  </div>
+
+  <!-- input triggers modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Firewall</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">Essentially, you need to have firewalls fully implemented on your site. There are three basic types of firewalls: hardware firewalls, software firewalls, and web application firewalls (WAFs). Typically, an infrastructure has a combination of hardware and software firewalls, along with ones specifically designed for web applications, because apps create their own unique challenges and have become such a frequent target for intrusions. Making sure that technology is system-wide is one of the HIPAA compliant server requirements.</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
     </div>
   </div>
 </div>
+
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

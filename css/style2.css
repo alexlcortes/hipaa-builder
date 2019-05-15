@@ -17,11 +17,20 @@ img {
 }
 
 #target1 {
-  height:80px;;
+  height:100px;;
   width: 1138px;
 }
 
 #source {
-  height:80px;;
+  height:100px;;
   width: 1138px;
+}
+
+h3{
+  padding-top: 5px;
+}
+
+input {
+  height: 75px;
+  width: 75px;
 }
