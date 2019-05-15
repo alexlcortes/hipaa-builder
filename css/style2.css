@@ -1,10 +1,5 @@
-div {
-  padding: 10px;
-  display:inline-block;
-}
-
 .target {
-  border: 1px solid black;
+  border: 3px solid black;
 }
 
 span {
@@ -12,45 +7,21 @@ span {
 }
 
 .source {
-  border: 1px solid black;
+  border: 3px solid black;
+
 }
 
 img {
   height: 75px;
   width: 75px;
-
 }
 
 #target1 {
-
-  height: 85px;
-  width: 85px;
+  height:80px;;
+  width: 1138px;
 }
 
-#target2 {
-
-  height: 85px;
-  width: 85px;
-}
-
-#target3 {
-
-  height: 85px;
-  width: 85px;
-}
-
-#target4 {
-  height: 85px;
-  width: 85px;
-}
-
-#target5 {
-
-  height: 85px;
-  width: 85px;
-}
-
-#target6 {
-  height: 85px;
-  width: 85px;
+#source {
+  height:80px;;
+  width: 1138px;
 }
