@@ -9,7 +9,7 @@ function dragstart_handler(ev) {
 
 function drop_handler(ev) {
  console.log("Drop");
- ev.currentTarget.style.background = "lightyellow";
+ //ev.currentTarget.style.border = "1px solid black";
  ev.preventDefault();
  var data = ev.dataTransfer.getData("text");
  ev.target.appendChild(document.getElementById(data));
